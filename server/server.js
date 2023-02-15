@@ -25,11 +25,8 @@ app.post("/create-checkout-session", async (req, res) => {
       const session = await stripe.checkout.sessions.create({
         payment_method_types: ["card"],
         mode: "payment",
-        // we sent item info with our request, 
-        // we can get it with req.body and .items bc thats the items object 
-        // we sent and called it items in the body
-        // then map through each item and return a new item formatted
-        // in the way stripe expects it to be formatted (storeItem)
+        // we can get item info with req.body and .items bc thats the items object 
+        // then map through each item and return a new item formatted for stripe
         line_items: req.body.items.map(item => {
           const storeItem = storeItems.get(item.id)
           return {
