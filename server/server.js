@@ -15,8 +15,12 @@ app.use(
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
 
 const storeItems = new Map([
-    [1, { priceInCents: 1999, name: "Basic Package" }],
-    [2, { priceInCents: 3999, name: "Standard Package" }],
+    [1, { priceInCents: 29999, name: "Kitchen Remodel Fund" }],
+    [2, { priceInCents: 12999, name: "Hatch Restore Clock" }],
+    [3, { priceInCents: 1999, name: "Outdoor Wall Sconces" }],
+    [4, { priceInCents: 2499, name: "Motion Sensor LED Light" }],
+    [5, { priceInCents: 1999, name: "2 Compartment Hamper" }],
+    [6, { priceInCents: 3999, name: "20 Piece Stainless Steel Flatware" }],
 ]);
 
 app.post("/create-checkout-session", async (req, res) => {
