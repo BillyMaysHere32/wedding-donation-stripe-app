@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "name": "Kitchen Remodel Fund",
+      "price": 299.99,
+      "imgUrl": "/kit.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Hatch Restore Clock",
+      "price": 129.99,
+      "imgUrl": "/clock.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Outdoor Wall Sconces",
+      "price": 19.99,
+      "imgUrl": "/sconces.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Motion Sensor LED Light",
+      "price": 24.99,
+      "imgUrl": "/motion.jpg"
+    },
+    {
+      "id": 5,
+      "name": "2 Compartment Hamper",
+      "price": 19.99,
+      "imgUrl": "/hamper.jpg"
+    },
+    {
+      "id": 6,
+      "name": "20 Piece Stainless Steel Flatware",
+      "price": 39.99,
+      "imgUrl": "/flatware.jpg"
+    }
+]

@@ -8,7 +8,8 @@ app.use(express.json());
 app.use(
   cors({
     // client url
-    origin: "http://localhost:3000",
+    // origin: "http://localhost:3000",
+    origin: "https://frolicking-zuccutto-fdf6b4.netlify.app",
   })
 );
   
@@ -22,6 +23,11 @@ const storeItems = new Map([
     [5, { priceInCents: 1999, name: "2 Compartment Hamper" }],
     [6, { priceInCents: 3999, name: "20 Piece Stainless Steel Flatware" }],
 ]);
+
+// greeting route
+app.get('/', (req, res) => {
+  res.send('Hello, welcome to registry app API')
+});
 
 app.post("/create-checkout-session", async (req, res) => {
     try {
