@@ -6,21 +6,22 @@ export function About() {
     <div>
       <h1>About</h1>
       <hr></hr>
-      <img
-               style={{ objectFit: "cover"}}
-              className="d-block w-100"
-              src={pic1}
-              alt="Second slide"
-            />
+      <br></br>
+      <div className="d-flex flex-column justify-content-between align-items-center mb-5">
+        <img
+          style={{ objectFit: "cover"}}
+          className="d-block w-75"
+          src={pic1}
+          alt="Second slide"
+        />
+      </div>
       <br></br>
       <div>
-          <h3 className="project-title fw-bold">Our Story</h3>
-          <p className="lead">Kevin was a senior in high school when Kristen was a freshman. They never exchanged words, but had mutual acquaintances and knew of each other. 
-            14 years later, Kristen decided to go back to her roots and she moved back to her hometown. 
-            The two reconnected through social media in February 2021 and Kevin proposed to Kristen in the Bahamas on the beach on March 21, 2022 ❤️
-
-            We are so thrilled to have found each other again and to be starting this exciting chapter in our lives. We can’t wait to celebrate with you!
-            -Kevin & Kristen</p>
+          {/* <h3 className="project-title fw-bold">How to </h3> */}
+          <p className="wedding lead">Thank you so much for visiting our registry website and taking part in our special day. ❤️ To add a gift, simply click the add button on the item in the registry tab and add the amount of items you wish. Then the shopping cart will appear in the top right corner where you can click for check. It will ask for your credit card through Stripe and will donate your amount to our wedding fund.
+          </p><p className="wedding lead">
+            We are so excited to share this moment with you, our closest friends and family, we can’t wait to celebrate with you!
+          </p><p className="wedding lead">-Kevin & Kristen</p>
         </div>
     </div>
   )

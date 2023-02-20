@@ -20,7 +20,7 @@ export function ShoppingCart({ isOpen }) {
           body: JSON.stringify({
               items: cartItems  
           })
-        // all this code will get res back from server which is a url, and send user to url   
+        // this code will get res back from server which is a url, and send user to url   
         }).then(res => {
           console.log(res)
           if (res.ok) return res.json()

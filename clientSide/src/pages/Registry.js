@@ -8,10 +8,11 @@ export function Registry() {
     return (
       <div>
         <h1>Registry</h1>
+        <hr></hr>
+        <br></br>
         <Row md={2} xs={1} lg={3} className="g-3">
           {invItems.map(item => (
             <Col key={item.id}>
-              {/* {JSON.stringify(item)} */}
               <StoreItem {...item} />
             </Col>
           ))}
